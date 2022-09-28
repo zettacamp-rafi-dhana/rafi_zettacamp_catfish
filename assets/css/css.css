@@ -1,7 +1,7 @@
 
     a { color: #000000;}
 
-    #but a{ 
+    #but a, #but input{ 
                 border: none; 
                 border-radius: 8px;
                 padding: 7px 15px;
@@ -54,6 +54,33 @@
                     padding: 8px;
                     text-align: center;
                 }
+
+                #shp {
+                    border-collapse: collapse;
+  
+  
+                    }
+                #shp td, #shp th {
+                    border: 1px solid #ddd;
+                    padding: 8px;
+                    text-align: center;
+                }
+
+                #shp tr:nth-child(even){
+                    background-color: #f2f2f2a4;
+                    }
+
+                #shp tr:hover {
+                    background-color: #ddddddbe;
+                    }
+
+                #shp th {
+                    padding-top: 12px;
+                    padding-bottom: 12px;
+                    text-align: center;
+                    background-color: #0423aa;
+                    color: white;
+                    }
 
 
 

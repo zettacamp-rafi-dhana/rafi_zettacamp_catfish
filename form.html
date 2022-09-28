@@ -5,37 +5,76 @@
     <body>
         <h1>Form User</h1>
         <form action="">
-            <p>First Name</p>
-            <input type="text" name="fname" placeholder="First Name">
-            <p>Last Name</p>
-            <input type="text" name="lname" placeholder="Last Name">
-            <p>Short Introduction</p>
-            <textarea name="intro" placeholder="Short Introduction" rows="6" cols="40"></textarea>
-            <p>Gender</p>
-            <input type="radio">
-            <label for="">Men</label><br>
-            <input type="radio">
-            <label for="">Women</label><br>
-            <input type="radio">
-            <label for="">Other<span style="color:red">&#42;</span></label><br>
-            <p>If Others Please Specified<span style="color:red">&#42;</span></p>
-            <p>Email</p>
-            <input type="email" placeholder="Email Address" name="email">
-            <p>Phone Number</p>
+            <!-- first name -->
+            <label for="fname">First Name</label><br><br>
+            <input type="text" name="fname" placeholder="First Name"><br><br>
+
+            <!-- last name -->
+            <label for="lname">Last Name</label><br><br>
+            <input type="text" name="lname" placeholder="Last Name"><br><br>
+
+            <!-- introduction -->
+            <label for="intro">Short Introduction</label><br><br>
+            <textarea name="intro" placeholder="Short Introduction" rows="6" cols="40"></textarea><br><br>
+
+            <!-- gender -->
+            <label for="gender">Gender</label><br><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="">Other<span style="color:red">&#42;</span></label><br><br>
+            <label>If Others Please Specified<span style="color:red">&#42;</span></label><br><br>
+            <input type="text" placeholder="Please Specified"><br><br>
+
+            <!-- D.O.B -->
+            <label for="dob">Day Of Birth</label><br><br>
+            <input type="date" name="dob"><br><br>
+
+           <!-- Country -->
+           <label for="nation">Nationality</label><br><br>
+           <input list="nations" name="nation" id="nation">
+           <datalist id="nations">
+             <option value="Indonesia">
+             <option value="Malaysia">
+             <option value="Thailand">
+             <option value="Singapore">
+             <option value="Vietnam">
+           </datalist>
+            <br><br>
+
+            <!-- email -->
+            <label for="email">Email</label><br><br>
+            <input type="email" placeholder="Email Address" name="email"><br><br>
+
+           <!-- phone -->
+            <label for="phone">Phone Number</label><br><br>
             <input type="tel"  placeholder="Phone Number" name="phone"><br><br>
+
+            <!-- age -->
             <label for="age">Age</label><br><br>
             <input type="number" name="age"><br><br>
-            <label for="age">Your Social Media URL&apos;s</label><br><br>
+
+           <!-- social -->
+            <label for="social">Your Social Media URL&apos;s</label><br><br>
             <input type="url" placeholder="https"><br><br>
             <input type="url" placeholder="https"><br><br>
             <input type="url" placeholder="https"><br><br>
             
+            <div id="but">
             <input type="submit" placeholder="Submit">
-
+            </div>
             
         </form>
+<br><br>
+        <div id="but">
+            <a href="index.html">Profile</a>
+            <a href="list.html">Profile</a>
+        </div>
+    
     </body>
     <footer>
-
+        <link rel="stylesheet" href="./assets/css/css.css">
     </footer>
 </html>
