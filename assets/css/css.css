@@ -82,5 +82,88 @@
                     color: white;
                     }
 
+                    #multimedia td {
+                        border: none;
+                        padding: 8px;
+                        text-align: center;
+                    }
+    
+                    .bio {
+         
+                        border-collapse: collapse;
 
+                        }
+                    .bio td, .bio th {
+                        border: 1px solid #ddd;
+                        padding: 8px;
+                        text-align: center;
+                    }
+    
+                    .bio tr:nth-child(even){
+                        background-color: #f2f2f2a4;
+                        }
+    
+                    .bio tr:hover {
+                        background-color: #ddddddbe;
+                        }
+    
+                    .bio th {
+                        padding-top: 12px;
+                        padding-bottom: 12px;
+                        text-align: center;
+                        background-color: #0423aa;
+                        color: white;
+                        }
+    
 
+                        
+                        .prof {
+                            border-collapse: collapse;
+                            
+          
+                            }
+
+                        .prof td, .prof th {
+                            border: 1px solid #ddd;
+                            padding: 8px;
+                            text-align: center;
+                        }
+        
+                        .prof tr:nth-child(even){
+                            background-color: #f2f2f2a4;
+                            }
+        
+                        .prof tr:hover {
+                            background-color: #ddddddbe;
+                            }
+        
+                        .prof th {
+                            padding-top: 12px;
+                            padding-bottom: 12px;
+                            text-align: center;
+                            background-color: #0423aa;
+                            color: white;
+                            }
+        
+    
+                            .nb a, .nb input{ 
+                                border: none; 
+                                border-radius: 8px;
+                                padding: 7px 15px;
+                                text-align: center;
+                                text-decoration: none;
+                                display: inline-block;
+                                font-size: 14px;
+                                margin: 4px 2px;
+                                cursor: pointer;
+                                background-color: #0423aa;
+                                color: #fff; 
+                               
+                            }
+                            .nb a:hover {background-color: #0e04aa;}
+                            .nb{
+                                list-style-type: none;
+                            }
+                            .nb li {
+                                display: inline;
+                            }

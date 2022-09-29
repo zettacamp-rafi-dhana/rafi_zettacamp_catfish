@@ -1,0 +1,137 @@
+<html>
+    <head>
+        <title>Form Input</title>
+        <link rel="stylesheet" href="./assets/css/css.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="nb">
+                    <li><a href="index.html">Profile</a></li>
+                    <li><a href="form.html">Form</a></li>
+                    <li><a href="form_input.html">Form Input</a></li>
+                    <li><a href="list.html">List</a></li>
+                    <li><a href="table_input.html">Table Input</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>User Profile</h1>
+            <section>
+            <form onsubmit="return false;">
+                <!-- name -->
+                <label for="fname">First Name</label><br>
+                <input type="text" id="fname" value="" placeholder="name"><br><br>
+                <label for="lname">Last Name</label><br>
+                <input type="text" id="lname" value="" placeholder="Last Name"><br><br>
+                <!-- email -->
+                <label for="mail">Email</label><br>
+                <input type="mail" id="mail" value="" placeholder="Email"><br><br>
+                <!-- phone -->
+                <label for="phone">Phone Number</label><br>
+                <input type="tel" id="phone" value="" placeholder="Phone Number"><br><br>
+                <!-- gender -->
+                <p>Gender</p>
+                <input type="radio" value="male" id="male">
+                <label for="male" >Male</label><br>
+                <input type="radio" value="female" id="female">
+                <label for="female" >Female</label><br>
+                <input type="radio" value="abstain" id="abstain">
+                <label for="abstain" >Prefer not to declare</label><br><br>
+                <!-- dob -->
+                <label for="dob">Day Of Birth</label><br><br>
+                <input type="date" name="dob"><br><br>
+                <!-- position -->
+                <p>Preffered job position</p>
+                <input type="checkbox" value="interm" id="interm">
+                <label for="iterm">Interm</label><br>
+                <input type="checkbox" value="junior" id="junior">
+                <label for="junior">Junior</label><br>
+                <input type="checkbox" value="senior" id="senior">
+                <label for="senior">Senior</label><br><br>
+
+                <!-- bio -->
+                <label for="bio">Short Introduction</label><br>
+                <textarea id="bio" name="bio" rows="6" cols="40"></textarea><br><br>
+                <!-- img -->
+                <label for="image"><b>Please submit your photo</b></label><br><br>
+                <input type="file" id="image"><br><br>
+
+            <input type="submit" onClick="form_input();">
+
+          
+
+            </form>
+            </section>
+            <br><br>
+            <section>
+                <table class="prof">
+                    <thead>
+                        <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                        <th>Phone Number</th>
+                        <th>Gender</th>
+                        <th>Day Of Birth</th>
+                        <th>Preffered Position</th>
+                        <th>Summary</th>
+                        <th>Picture</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td id="_fname"></td>
+                        <td id="_lname"></td>
+                        <td id="_mail"></td>
+                        <td id="_phone"></td>
+                        <td>Male</td>
+                        <td>11 October 1999</td>
+                        <td>Interm</td>
+                        <td id="_bio"></td>
+                        <td><img src="./assets/images/IMG_0016mr copy.jpg" alt="" width="120"></td>
+                    </tr>
+    
+               </table>
+            <!-- <table id="datable">
+                <thead>
+                    <tr>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Phone Number</th>
+                    <th>Gender</th>
+                    <th>Preffered Position</th>
+                    <th>Picture</th>
+                    </tr>
+                </thead>
+
+           </table> -->
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+    <script>
+        function form_input() {
+          var fname = document.getElementById("fname").value;
+          document.getElementById("_fname").innerHTML = fname;
+          var lname = document.getElementById("lname").value;
+          document.getElementById("_lname").innerHTML = lname;
+          var email = document.getElementById("mail").value;
+          document.getElementById("_mail").innerHTML = email;
+          var phone = document.getElementById("phone").value;
+          document.getElementById("_phone").innerHTML = phone;
+          var bio = document.getElementById("bio").value;
+          document.getElementById("_bio").innerHTML = bio;
+          
+          
+          
+          
+
+
+
+           
+
+        }
+    </script>
+</html>
