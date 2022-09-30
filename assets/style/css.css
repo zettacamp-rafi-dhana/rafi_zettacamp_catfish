@@ -1,7 +1,138 @@
+/* Navbar */
+
 .nav {
-    background-color: #000;
-    color: #fff;
+    overflow: hidden;
+    background-color: #333;
 }
-.nav a { 
-    display: inline-block;
+
+.nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+.nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* card */
+
+.card {
+
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    margin-left:15px ;
+  }
+
+.card  a {
+    float: left;
+    color: #f2f2f2;
+    background-color: #000000;
+    text-align: center;
+    padding: 8px 12px;
+    margin-bottom:10px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+
+  .container {
+    padding: 2px 16px;
+    text-align:justify;
+  }
+
+  .wrapper {
+    display: flex;
+    margin-top: 20;
+  }
+
+  .form {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 30%;
+    margin-left:15px ;
+
+  }
+
+  .form a { 
+    float: center;
+    color: #f2f2f2;
+    background-color: #000000;
+    text-align: center;
+    padding: 8px 12px;
+    margin-bottom:10px;
+    text-decoration: none;
+    font-size: 17px;
 }
+
+.bio {
+         
+    border-collapse: collapse;
+
+    }
+.bio td, .bio th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.bio tr:nth-child(even){
+    background-color: #f2f2f2a4;
+    }
+
+.bio tr:hover {
+    background-color: #ddddddbe;
+    }
+
+.bio th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #0423aa;
+    color: white;
+    }
+
+    
+.song {
+         
+    border-collapse: collapse;
+
+    }
+.song td, .song th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.song tr:nth-child(even){
+    background-color: #f2f2f2a4;
+    }
+
+.song tr:hover {
+    background-color: #ddddddbe;
+    }
+
+.song th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #272877;
+    color: white;
+    }
+
+    .scard {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 65%;
+        margin-left:15px ;
+    
+      }
