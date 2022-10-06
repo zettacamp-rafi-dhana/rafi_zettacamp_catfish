@@ -14,6 +14,15 @@
     flex-wrap: wrap;
     flex-grow: 3;
     justify-content: center;
+    position: relative;
+    
+}
+
+.wrap-list {
+    display: flex;
+    
+    position: relative;
+    
 }
 
 
@@ -21,22 +30,26 @@
     font-size: 40px;
     font-weight: bold;
     text-align: center;
-    /* background-color: #128fdc; */
+    /* position: -webkit-sticky;
+    position: sticky; */
+    /* right: 33vw; */
+    background-color: #128fdc;
+    opacity: 0.9;
     /* margin-bottom: -20px; */
+    z-index: 1;
+    /* color: #fff; */
 }
 
-.card_1, .card_3  { 
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    width: 30%;
-    margin: 0 20px 0 20px;
-    border-radius: 10px;
-    border: 0.5px solid rgba(0,0,0,0.2);
+.title.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
-.card_2 {
+
+.card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     width: 30%;
-    margin: 1rem 20px 1rem 20px;
     border-radius: 10px;
     border: 0.5px solid rgba(0,0,0,0.2);
 }
@@ -58,7 +71,7 @@
     margin-bottom: 10px;
 }
 
-.card_1 img ,.card_2 img , .card_3 img , .card_content img {
+.card img , .card_page img {
     width: auto;
     height: 20vh;
     display:block;
@@ -132,10 +145,9 @@
 
 .card_page {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    width: 40%;
-    height:auto;
     margin: 20px 20px 0 20px;
     border-radius: 10px;
+    border: 0.5 solid rgba(0,0,0,3.);
 }
 
 
@@ -165,4 +177,76 @@
 
   .main_nav a::before {
     content: "\2190";
+  }
+
+  .card-list {
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border: 0.5 solid #000000;
+    border-radius: 10px;
+  }
+
+  .card-list img {
+    width: auto;
+    height: 5vh;
+    display: inline;
+    margin: auto;
+    border: 0.5 solid rgba(0,0,0,3.);
+    border-radius: 3px;
+  }
+
+  .cardflex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border: 0.5px solid #000000;
+    
+  }
+
+  .card-list ul {
+    list-style-type: none;
+  }
+
+  .list {
+    display: block;
+    overflow:scroll;
+    height: 300;
+  }
+  
+
+
+
+
+  .m-b-1 {
+    margin-bottom: 1rem;
+  }
+
+  .m-t-1 {
+    margin-top: 1rem;
+  }
+
+  .m-t-b-1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .m-1 {
+    margin: 1rem;
+  }
+
+
+  .m-2 {
+    margin: 2rem;
+  }
+
+  .p-1 {
+    padding: 1rem;
+  }
+
+  .p-l-1 {
+    padding-left: 1rem;
+  }
+
+  .p-l-2 {
+    padding-left: 2rem;
   }
