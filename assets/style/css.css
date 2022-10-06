@@ -30,8 +30,9 @@
     font-size: 40px;
     font-weight: bold;
     text-align: center;
-    /* position: -webkit-sticky;
-    position: sticky; */
+    /* position: -webkit-sticky; */
+    position: sticky;
+    top: 0;
     /* right: 33vw; */
     background-color: #128fdc;
     opacity: 0.9;
@@ -40,11 +41,11 @@
     /* color: #fff; */
 }
 
-.title.sticky {
+/* .title.sticky {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-}
+} */
 
 
 .card {
