@@ -235,3 +235,12 @@ textarea {
 .p-l-1  {
     padding-left: 1rem;
 }
+
+.p-r-1  {
+    padding-right: 1rem;
+}
+
+.p-r-l-1 {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
