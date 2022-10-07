@@ -2,85 +2,98 @@
     <head>
         <title>add-item</title>
         <link rel="stylesheet" href="../assets/style/css.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     </head>
 
     <body>
-        
-        <header>
-            <nav>
-                <a href="../index.html">Brand</a>
-                <p>Title</p>
+        <header class="main_nav">
+            <nav class="wrap-title">
+                <a href="../index.html">Sepotipay</a>
+                <p>List</p>
             </nav>
-        </header>
+    </header>
 
         <main>
-            <div>
+            <div class="card-input m-t-b-2 container p-t-b-1">
+                <h1>Input the Product</h1>
                 <form action="">
-                    <table>
+                    <table class="wrap-intro">
                         <tr>
-                            <td>
-                                <input type="file">
+                            <td class="input-img">
+                                <input type="file" id="file" hidden>
+                                <label class="form__file" for="file">
+                                <div>
+                                    &#43; Upload Product Image
+                                    </div>
+                                </label>
                             </td>
-                            <td>
-                                <label for="">Product Name</label>
-                                <input type="text">
-                            </td>
+                        
+                                <td class="p-l-1 intro-td">
+                                    <label for="pname">Product Name</label>
+                                    <input type="text" id="pname" name=""><br><br>
+                                    <label for="pprice">Price Product</label>
+                                    &nbsp;<input type="number" id="pprice" name="">
+                                    <br><br>
+                                    <a href="#" class="but">Submit</a>
+
+                                
+                            
                         </tr>
                         <tr>
                             <td></td>
-                            <td>
-                                <label for="">Price Product</label>
-                                <input type="number">
+                            <td class="p-l-1 intro-td">
+                               
                             </td>
                         </tr>
                     </table>
                 </form>
             </div>
 
-            <div>
-                <h1>Shopping Card</h1>
+            <div style="display:flex; justify-content: center;">
+                <h1>Card Preview</h1>
             </div>
 
-            <div>
+            <div class="wrap-card">
 
                 <div class="card container m-1 ">
                     <div class="card_title">
-                        <h2>PS 5</h2>
+                        <h2>Overture</h2>
                     </div>
-                        <img src="https://asset.kompas.com/crops/1C-M-9auIGQ6NICQLHdac3T88ME=/131x95:935x631/750x500/data/photo/2020/06/12/5ee2d91340862.jpg" alt="">
-                    <div class="card_content">
+                        <img src="../assets/images/album1.jpg" alt="">
+                    <div class="card_content m-t-b-1">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae deleniti laudantium velit nostrum sit, optio placeat aspernatur laboriosam eos mollitia autem quo officia quos illo maiores dolor quis sequi animi.</p>
                     </div>
                     <div class="card_footer">
-                        <h2>Price: Rp. 12.000.000</h2>
+                        <h2>Price: Rp. 450.000</h2>
                         <a href="./html/item.html" class="">View </a>
                     </div>
                 </div>
 
                 <div class="card container m-1 ">
                     <div class="card_title">
-                        <h2>PS 5</h2>
+                        <h2>Stellar</h2>
                     </div>
-                        <img src="https://asset.kompas.com/crops/1C-M-9auIGQ6NICQLHdac3T88ME=/131x95:935x631/750x500/data/photo/2020/06/12/5ee2d91340862.jpg" alt="">
-                    <div class="card_content">
+                        <img src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2021/9/3/df037c35-4fb5-4ea6-aec8-279a262358f6.jpg" alt="">
+                    <div class="card_content m-t-b-1">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae deleniti laudantium velit nostrum sit, optio placeat aspernatur laboriosam eos mollitia autem quo officia quos illo maiores dolor quis sequi animi.</p>
                     </div>
                     <div class="card_footer">
-                        <h2>Price: Rp. 12.000.000</h2>
+                        <h2>Price: Rp. 500.000</h2>
                         <a href="./html/item.html" class="">View </a>
                     </div>
                 </div>
 
                 <div class="card container m-1 ">
                     <div class="card_title">
-                        <h2>PS 5</h2>
+                        <h2>YSIV</h2>
                     </div>
-                        <img src="https://asset.kompas.com/crops/1C-M-9auIGQ6NICQLHdac3T88ME=/131x95:935x631/750x500/data/photo/2020/06/12/5ee2d91340862.jpg" alt="">
-                    <div class="card_content">
+                        <img src="https://miro.medium.com/max/1080/1*tRNwkIlLTGKXgFycyLd9HQ.jpeg" alt="">
+                    <div class="card_content m-t-b-1">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae deleniti laudantium velit nostrum sit, optio placeat aspernatur laboriosam eos mollitia autem quo officia quos illo maiores dolor quis sequi animi.</p>
                     </div>
                     <div class="card_footer">
-                        <h2>Price: Rp. 12.000.000</h2>
+                        <h2>Price: Rp. 750.000</h2>
                         <a href="./html/item.html" class="">View </a>
                     </div>
                 </div>
@@ -89,7 +102,7 @@
 
         </main>
 
-        <footer class="main_footer">                
+        <footer class="main_footer m-t-b-1">                
             <a href="./about-me.html" class="">About</a>
             <a href="./contact-me.html" class="">Contact</a>
         </footer>
