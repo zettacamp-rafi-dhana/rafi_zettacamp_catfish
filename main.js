@@ -1,5 +1,5 @@
 let price = 100000;
-let diskon = 15;
+let diskon = 50;
 const ppn = 10;
 let afDiskon;
 let afPpn;
@@ -8,7 +8,7 @@ function purchase (price, diskon, ppn) {
 
     diskon = price * diskon / 100;
     afDiskon = price - diskon;
-    ppn = price * ppn / 100;
+    ppn = afDiskon * ppn / 100;
     afPpn = afDiskon + ppn;
 
     console.log("Harga Buku Rp. " + price);
