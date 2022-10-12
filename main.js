@@ -50,19 +50,23 @@ function purchase (price, diskon, ppn, beli) {
     let kredit = confirm("apakah anda ingin mengajukan kredit")
     if(kredit == true) {
         let monthCredit = prompt("Pilih pengajuan kredit " + creditMonths+("a/b/c"));
-        if(monthCredit == "a") {
+        if(monthCredit == 3) {
                 let a =0;
                 let termCredit = [];
                 let monthlyCredit = afPpn / 3;
                 console.log("Total Kredit perbulan Rp. " + monthlyCredit);
 
+                for (i = 0; i <= monthCredit; i++) {
+                    monthCredit += monthlyCredit;
+                    termCredit.push({
+                    bulan: i,
+                    price: monthlyCredit,
+                    totally: monthCredit,
+                    }
+                    )
+                    }  
+                console.log(termCredit);
                 
-                   do { 
-                    console.log("Bulan " + monthlyCredit); 
-                   a++;
-                } while(a<=2);
-            
-
                 if(stocks > 0) {
                     konfirmasi()
             
