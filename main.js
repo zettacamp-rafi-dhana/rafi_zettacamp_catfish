@@ -6,6 +6,7 @@ let afPpn;
 let jumlah_buku;
 let disprice;
 let stocks = 5;
+let creditMonths = ["a. 3 Bulan", "b. 6 Bulan", "c. 12 Bulan"];
 
 konfirmasi()
 
@@ -46,11 +47,54 @@ function purchase (price, diskon, ppn, beli) {
     stocks = stocks - beli ;
     console.log(stocks);
  
-    if(stocks > 0) {
+    let kredit = confirm("apakah anda ingin mengajukan kredit")
+    if(kredit == true) {
+        let monthCredit = prompt("Pilih pengajuan kredit " + creditMonths+("a/b/c"));
+        if(monthCredit == "a") {
+                let a =0;
+                let termCredit = [];
+                let monthlyCredit = afPpn / 3;
+                console.log("Total Kredit perbulan Rp. " + monthlyCredit);
+
+                
+                   do { 
+                    console.log("Bulan " + monthlyCredit); 
+                   a++;
+                } while(a<=2);
+            
+
+                if(stocks > 0) {
+                    konfirmasi()
+            
+            
+                }
+                
+                
+        } else if(monthCredit == "b") {
+            let monthlyCredit = afPpn / 6;
+                console.log("Total Kredit perbulan Rp. " + monthlyCredit);
+                if(stocks > 0) {
+                    konfirmasi()
+            
+            
+                }
+        } else if(monthCredit == "c") {
+            let monthlyCredit = afPpn / 12;
+                console.log("Total Kredit perbulan Rp. " + monthlyCredit);
+                if(stocks > 0) {
+                    konfirmasi()
+            
+            
+                }
+        }
+        
+
+    } else if(stocks > 0) {
         konfirmasi()
 
 
     }
+    
 }
 
 function konfirmasi() { 
