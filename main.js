@@ -15,7 +15,7 @@ function purchase (price, diskon, ppn, beli) {
     afPpn = 0;
     price = 100000;
     diskon = 50;
-    ppn = 0;
+    ppn = 10;
     if(beli > stocks)
     {
         console.log("maaf stock melebihi ketersedian")
