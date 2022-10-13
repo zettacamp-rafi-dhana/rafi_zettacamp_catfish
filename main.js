@@ -17,7 +17,7 @@ let songList = [{song:"Highway",artist: "Grand Midnight Orchestra",duration: 3, 
 beginning();
 
 function beginning() {
-    let question = prompt("Silahkan pilih pencarian berdasarkan angka dari pilihan yang anda mau berikut : 1.artist 2.genre 3.duration less than 1 hour 4.Keluar");
+    let question = prompt("Please input number from the option given : 1. artist 2. genre 3. Create playlist less than 1 hour 4. Exit");
     if(question == 1) {
 
         fArtist();
@@ -32,7 +32,7 @@ function beginning() {
 
     } else if(question == 4) {
         
-        console.log("Sampai berjumpa kembali");
+        console.log("See you again!!");
         return;
 
     } else if(question == 5) {
@@ -40,39 +40,39 @@ function beginning() {
         fsong();
 
     }   else {
-        console.log("harap masukan inputan yang tepat")
+        console.log("Please input the correct number!!")
         return beginning();
 }
 
 function fArtist() {
-    let inArtist = prompt("Masukan nama artis yang dicari")
+    let inArtist = prompt("Please input the artist name")
     let filterArtist = songList.filter(function(obj) {
         return obj.artist === inArtist;
     } )
 
     console.log(...filterArtist);
 
-    let again = confirm("Apakah anda ingin kembali ke menu awal?")
+    let again = confirm("Do you want to return to Main menu?")
     if (again == true) {
         return beginning();
     } else {
-        console.log("Sampai berjumpa lagi")
+        console.log("See you again!!")
         return;
     }
 }
 
 function fGenre() {
-    let inGenre = prompt("Masukan genre yang dicari")
+    let inGenre = prompt("Please Input the Genre name")
     let filterGenre= songList.filter(function(obj) {
         return obj.genre === inGenre;
     }
     )
     console.log(...filterGenre);
-    let again = confirm("Apakah anda ingin kembali ke menu awal?")
+    let again = confirm("Do you want to return to Main menu?")
     if (again == true) {
         return beginning();
     } else {
-        console.log("Sampai berjumpa lagi")
+        console.log("See you again!!")
         return;
     }
 } }
@@ -93,17 +93,17 @@ function fGenre() {
 // } 
 
 function fsong() {
-    let inSong = prompt("Masukan judul yang dicari")
+    let inSong = prompt("Please input the song title")
     let findSong= songList.find(function(obj) {
         return obj.song === inSong;
     }
     )
     console.log(findSong);
-    let again = confirm("Apakah anda ingin kembali ke menu awal?")
+    let again = confirm("Do you want to return to Main menu?")
     if (again == true) {
         return beginning();
     } else {
-        console.log("Sampai berjumpa lagi")
+        console.log("See you again!!")
         return;
     }
 } 
@@ -128,7 +128,13 @@ function fDuration() {
         }
         
     }
-   return beginning();
+    let again = confirm("Do you want to return to Main menu?")
+    if (again == true) {
+        return beginning();
+    } else {
+        console.log("See you again!!")
+        return;
+    }
         
         
     } 
