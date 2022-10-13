@@ -14,9 +14,9 @@ function purchase (price, diskon, ppn, beli) {
     afDiskon = 0;
     disprice = 0;
     afPpn = 0;
-    price = 100000;
-    diskon = 50;
-    ppn = 10;
+    price = 6000;
+    diskon = 0;
+    ppn = 0;
     if(beli > stocks)
     {
         console.log("maaf stock melebihi ketersedian")
@@ -78,20 +78,26 @@ if (beli == true ) {
 function peminjaman() {
 
     let monthCredit = prompt("Pilih pengajuan kredit " + creditMonths+(" Masukan saja 'angka' bulan yang anda mau"));
-    if(monthCredit == 3) {
-            let a =3;
+    if(monthCredit == 7) {
+            let a =7;
             let termCredit = [];
-            let monthlyCredit = afPpn / 3;
+            let monthlyCredit = parseFloat((afPpn / 7).toFixed(2));
             console.log("Total Kredit perbulan Rp. " + monthlyCredit);
             
 
-            for (i = 1; i <= a; i++) {
+            for (let i = 1; i <= a; i++) {
                 monthCredit = monthlyCredit * i;
+                if (i==7) {
+                    let selisih = afPpn - monthCredit;
+                    afPpn += selisih;
+                    monthCredit += selisih;
+                }
                 termCredit.push({
                 bulan: i,
-                price:"Rp. "+ monthlyCredit,
-                totall:"Rp. "+ monthCredit,
+                price: "$. "+ parseFloat(monthlyCredit.toFixed(2)),
+                totall:"$. "+ parseFloat(monthCredit.toFixed(2)),
                 }
+                
                 )
                 }  
             console.log(...termCredit);
