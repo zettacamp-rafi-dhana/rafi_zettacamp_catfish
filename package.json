@@ -1,0 +1,23 @@
+{
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "name": "rafi_zettacamp_catfish",
+  "description": "First readme",
+  "version": "1.0.0",
+  "main": "js.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zettacamp-rafi-dhana/rafi_zettacamp_catfish.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zettacamp-rafi-dhana/rafi_zettacamp_catfish/issues"
+  },
+  "homepage": "https://github.com/zettacamp-rafi-dhana/rafi_zettacamp_catfish#readme"
+}
