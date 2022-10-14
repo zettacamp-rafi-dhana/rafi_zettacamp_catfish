@@ -2,7 +2,7 @@ let songList = [{song:"Highway",artist: "Grand Midnight Orchestra",duration: 3, 
                 {song:"Edamame",artist: "Rich Brian",duration: 3, genre: "hip-hop"}, 
                 {song:"Lost",artist: "NF",duration: 4, genre: "hip-hop"}, 
                 {song:"Luv Sic",artist: "Nujabes",duration: 2, genre: "hip-hop"}, 
-                {song:"Last Call",artist: "Logic",duration: 34, genre: "hip-hop"}, 
+                {song:"Last Call",artist: "Logic",duration: 7, genre: "hip-hop"}, 
                 {song:"Psychosocial",artist: "Slipknot",duration: 4, genre: "metal"}, 
                 {song:"Wake Me Up",artist: "Avicii",duration: 4, genre: "edm"}, 
                 {song:"Kingslayer",artist: "Bring Me the Horizon",duration: 4, genre: "metal"}, 
@@ -115,12 +115,14 @@ function fDuration() {
     let playlist = [];
 
     
+    let shufflePlaylist = songList.sort(() => Math.random() - 0.5);
+        
     
-    
-    for(let i=0; i<songList.length; i++){
-        songDuration += songList[i].duration;
+    // console.log(shufflePlaylist);
+    for(let i=0; i<shufflePlaylist.length; i++){
+        songDuration += shufflePlaylist[i].duration;
         if(songDuration <= time){
-            playlist[i] = ("Title : " +songList[i].song+ " Duration : "+songList[i].duration)
+            playlist[i] = ("Title : " +shufflePlaylist[i].song+ " Duration : "+shufflePlaylist[i].duration)
             console.log(playlist[i]);
             console.log("Playlist time: "+songDuration);
         }else{
@@ -138,3 +140,5 @@ function fDuration() {
         
         
     } 
+
+    
