@@ -1,14 +1,16 @@
-console.log("tes");
+console.log('tes');
 
 type combi = number | string;
 
-let case4: (string | number)[] = [1, 'data', 3, 'result']
-let case5: (string | number)[] = ['Bejo', 'has', '4', 'sport', 'car', 'and', 2, 'bike']
+
+
+let case4: (number | string)[] = [1, 'data', 3, 'result'];
+let case5: (number | string)[] = ['Bejo', 'has', '4', 'sport', 'car', 'and', 2, 'bike'];
 
 
 function union1(a: any): string {
 
-return a.join(' ')
+return a.join(' ');
 
 }
 
@@ -24,8 +26,18 @@ let case7: (combi)[] = ['Bejo', 'has', '4', 'sport', 'car', 'and', 2, 'bike'];
 console.log(union1(case6));
 console.log(union1(case7));
 
+type tes1 = {name:string, age:number, gender:boolean};
+let arr1 : tes1 = {name:'udin',age:21,gender:true}
 
+function cuba1(arr1: tes1) {
+    if(arr1.gender==true) {
+        console.log(arr1.name+ " laki-laki");
+    } else {
+        console.log(arr1.name+ " perempuan");
+    }
+}
 
+cuba1(arr1);
 
 // from udemy.
 // function case1(input1:string|number, 
