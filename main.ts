@@ -27,17 +27,17 @@ console.log(union1(case6));
 console.log(union1(case7));
 
 type tes1 = {name:string, age:number, gender:boolean};
-let arr1 : tes1 = {name:'udin',age:21,gender:true}
+let obj1 : tes1 = {name:'udin',age:21,gender:true}
 
-function cuba1(arr1: tes1) {
-    if(arr1.gender==true) {
-        console.log(arr1.name+ " laki-laki");
+function cuba1(obj1: tes1) {
+    if(obj1.gender==true) {
+        console.log(obj1.name+ " laki-laki");
     } else {
-        console.log(arr1.name+ " perempuan");
+        console.log(obj1.name+ " perempuan");
     }
 }
 
-cuba1(arr1);
+cuba1(obj1);
 
 // from udemy.
 // function case1(input1:string|number, 
