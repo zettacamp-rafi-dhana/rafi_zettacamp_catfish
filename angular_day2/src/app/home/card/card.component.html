@@ -1,0 +1,8 @@
+
+<div class="card" [ngStyle]="{'background-color': title === 'berubah' ? 'green' : 'white'}">
+  <div class="card-header"><h1>{{title}}<span *ngIf="title === 'berubah'">&check;</span> </h1></div>
+  <div class="card-content"><p>{{ cardEach.content }}</p></div>
+  <div class="card-footer">
+      <app-button (click)="ChangeTitle()"></app-button>
+  </div>
+</div>
