@@ -1,0 +1,12 @@
+<div class="background">
+
+
+
+
+
+<div class="form">
+<app-input-name (AddUser)="onAddedUser($event)"></app-input-name>
+</div>
+<app-card *ngFor="let isi of isiUser" [UserInput]="isi"></app-card>
+
+</div>
